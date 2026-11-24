@@ -1,0 +1,36 @@
+# Python & Virtual Environments
+__pycache__/
+*.py[cod]
+*$py.class
+*.egg-info/
+.pytest_cache/
+.ruff_cache/
+.venv/
+backend/.venv/
+backend/.pytest_cache/
+backend/.ruff_cache/
+
+# Frontend dependencies (dist/ is intentionally kept so Windows users can run without Node.js)
+frontend/node_modules/
+*.tsbuildinfo
+
+# Local runtime state, database, logs, and browser profiles
+data/*
+!data/.gitkeep
+!data/.gitignore
+*.log
+
+# Large third-party portable AirPlay/GStreamer binaries (keep README only)
+runtime/uxplay/*
+!runtime/uxplay/README.md
+
+# Local agent/session tracking
+SESSION_STATUS.md
+
+# Environment & OS artifacts
+.env
+.env.*
+*.bak
+Thumbs.db
+Desktop.ini
+.DS_Store
